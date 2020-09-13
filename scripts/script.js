@@ -131,3 +131,6 @@ $('.tabs__name-item').on('click', function () {
 $('.verification-exit').on('click', function () {
     $(this).parent().hide()
 })
+$('.chatbot').on('click', function () {
+    $('.chatbot__messanger').slideToggle()
+})

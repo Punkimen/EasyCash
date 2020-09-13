@@ -655,46 +655,6 @@ lang:focus {
     font-weight: 400;
 }
 
-.info__percent {
-    font-size: 10px;
-    line-height: 11px;
-    color: #fff;
-    background: #FFAE11;
-    text-align: center;
-    padding: 5px;
-    border-radius: 5px;
-    position: absolute;
-    max-width: 35px;
-    top: 25px;
-    left: 0;
-    z-index: 5;
-}
-
-.quantity__center {
-    position: absolute;
-    left: 0;
-    padding-left: 15px;
-}
-
-.news__info .info__percent {
-    left: 65px;
-}
-
-.news__info .quantity__center {
-    left: -45px;
-}
-
-.info__percent:before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background-color: #FFAE11;
-    position: absolute;
-    bottom: -5px;
-    transform: rotate(135deg);
-    left: 13px;
-}
-
 .credits .range .slider .ui-slider-range:first-child,
 .news__info .range .slider .ui-slider-range:first-child {
     z-index: 0;
@@ -2274,6 +2234,7 @@ html .ui-button.ui-state-disabled:hover {
     box-shadow: 0px 8px 45px rgba(81, 45, 168, 0.03);
     border-radius: 5px;
     background-color: #fff;
+    position: fixed;
 }
 
 .reg__calc-title {
@@ -2348,6 +2309,7 @@ html .ui-button.ui-state-disabled:hover {
     box-shadow: 0px 8px 45px rgba(81, 45, 168, 0.03);
     border-radius: 5px;
     background-color: #fff;
+    margin-right: 200px;
 }
 
 .reg__title {
@@ -3535,15 +3497,6 @@ html .ui-button.ui-state-disabled:hover {
     color: #1d1d1d;
 }
 
-.range__bg {
-    width: 31.0345%;
-    position: absolute;
-    height: 8px;
-    border-radius: 5px;
-    background: #F4F4F9;
-    bottom: 17px;
-}
-
 /* legal_information */
 .information,
 .credit__passport {
@@ -4502,4 +4455,57 @@ html .ui-button.ui-state-disabled:hover {
 
 .bank__item-name {
     padding-left: 50px;
+}
+
+.chatbot {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    max-width: 132px;
+    width: 100%;
+    z-index: 99;
+}
+
+.chatbot__messanger {
+    color: #000;
+    font-family: "Ubhuntu", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 0;
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+    top: -130px;
+    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    right: 0;
+}
+
+.chatbot__messanger a {
+    color: inherit;
+    opacity: 1;
+}
+
+.chatbot__messanger-item {
+    padding: 5px 15px;
+    width: 100%;
+}
+
+.chatbot__messanger-item:hover {
+    background-color: #F4F4F9;
+}
+
+.chatbot__messanger-item+.chatbot__messanger-item {
+    margin-top: 5px;
+}
+
+.chatbot img {
+    display: block;
+    max-width: 132px;
+    width: 100%;
+    height: auto;
 }
