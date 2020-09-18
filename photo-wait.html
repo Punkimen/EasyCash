@@ -17,7 +17,6 @@
     <script src="scripts/slick.min.js" defer></script>
     <script src="scripts/jquery-ui.min.js"></script>
     <script src="scripts/jquery.ui.touch-punch.min.js"></script>
-    <script src="scripts/resize.js" defer></script>
     <script src="scripts/script.js" defer></script>
 </head>
 
@@ -187,130 +186,21 @@
         </div>
     </header>
     <section class="loan__link">
-        <a href="#">Личный кабинет</a>
+        <a href="#">Верификация</a>
     </section>
-    <section class="persArea">
-        <div class="container">
-            <div class="persArea__tabs">
-                <div class="tabs__name">
-                    <div class="tabs__name-case">
-                        <div class="owner">
-                            <img src="images/star.png" alt="">
-                        </div>
-                    </div>
-                    <div class="tabs__name-items">
-                        <div class="tabs__name-item">
-                            <div class="tabs__name-arrow">
-                                <img src="images/arrow-right.png" alt="">
-                            </div>
-                            <div class="tabs__name-text"> Личные данные</div>
-                        </div>
-                        <div class="tabs__name-item">
-                            <div class="tabs__name-arrow">
-                                <img src="images/arrow-right.png" alt="">
-                            </div>
-                            <div class="tabs__name-text"> Доходы и платежи</div>
-                        </div>
-                        <div class="tabs__name-item">
-                            <div class="tabs__name-arrow">
-                                <img src="images/arrow-right.png" alt="">
-                            </div>
-                            <div class="tabs__name-text">Адреса</div>
-                        </div>
-                        <div class="tabs__name-item">
-                            <div class="tabs__name-arrow">
-                                <img src="images/arrow-right.png" alt="">
-                            </div>
-                            <div class="tabs__name-text"> Платежные карты</div>
-                        </div>
-                        <div class="tabs__name-item ">
-                            <div class="tabs__name-arrow">
-                                <img src="images/arrow-right.png" alt="">
-                            </div>
-                            <div class="tabs__name-text"> История транзакций</div>
-                        </div>
-                        <div class="tabs__name-item active">
-                            <div class="tabs__name-arrow">
-                                <img src="images/arrow-right.png" alt="">
-                            </div>
-                            <div class="tabs__name-text">Кредитная история</div>
-                        </div>
-                        <div class="tabs__name-item">
-                            <div class="tabs__name-arrow">
-                                <img src="images/arrow-right.png" alt="">
-                            </div>
-                            <div class="tabs__name-text"> Документы</div>
-                        </div>
-                        <div class="tabs__name-item">
-                            <div class="tabs__name-arrow">
-                                <img src="images/arrow-right.png" alt="">
-                            </div>
-                            <div class="tabs__name-text">Социальные сети</div>
-                        </div>
-                        <div class="tabs__name-item">
-                            <div class="tabs__name-arrow">
-                                <img src="images/arrow-right.png" alt="">
-                            </div>
-                            <div class="tabs__name-text">Сменить пароль</div>
-                        </div>
-                        <div class="tabs__name-item">
-                            <div class="tabs__name-arrow">
-                                <img src="images/arrow-right.png" alt="">
-                            </div>
-                            <div class="tabs__name-text"> <a class="personal__account-exit" href="main.html">Выйти</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tabs__content">
-                    <div class="tabs__content-items">
-                        <div class="tabs__content-item credit-history">
-                            <div class="tabs__content-head">
-                                <h3 class="head__title">Погасить кредит</h3>
-                            </div>
-                            <div class="table__repay">
-                                <div class="table__repay-item">
-                                    <div class="repay-item-text">Тело кредита</div>
-                                    <div class="repay-item-num">20 000 грн</div>
-                                </div>
-                                <div class="table__repay-item">
-                                    <div class="repay-item-text">Проценты</div>
-                                    <div class="repay-item-num">200.00 грн</div>
-                                </div>
-                                <div class="table__repay-item">
-                                    <div class="repay-item-text">Комиссия</div>
-                                    <div class="repay-item-num">0.00 грн</div>
-                                </div>
-                            </div>
-                            <div class="credit-history-repay">
-                                <div class="pay-cards-num">
-                                    <label class="form__title" for="cards-num">Номер карты*</label>
-                                    <input type="text" name="cards-num">
-                                </div>
-                                <div class="select">
-                                    <label class="form__title" for="card">Платежная карта*</label>
-                                    <select name="card">
-                                        <option value="" hidden disabled selected>Выберите из списка</option>
-                                        <option class="card-option" value="1">1234 5678 9786 6541</option>
-                                        <option class="card-option" value="2">1234 5678 9786 6541</option>
-                                    </select>
-                                    <div class="select_arrow">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="credit-history-promo">
-                                <div class="pay-cards-num">
-                                    <label class="form__title" for="promo">У меня есть промо-код</label>
-                                    <input type="text" name="promo">
-                                </div>
-                            </div>
-                            <div class="credit-history-btn btn">
-                                <a href="#">Погасить кредит</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section class="photo photo-document">
+        <div class="photo__title">Сделайте фото с документом</div>
+        <div class="photo-text">
+            Ожидайте, обработка фото
+        </div>
+        <div class="photo__wrapper">
+            <div class="photo__wrapper-img">
+                <img src="images/photo.png" alt="">
             </div>
+        </div>
+        <div class="photo__clock">
+            <img src="images/clockOrange.svg" alt="">
+        </div>
     </section>
     <footer class="footer">
         <div class="container">

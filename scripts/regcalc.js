@@ -63,7 +63,6 @@ let regCalc = function ($) {
     };
 
     let calc = function () {
-
         let summFormat = $('#summ').val(),//Сумма отформатированная
             summ = Number.parseInt( //Сумма без форматирования
                 summFormat.replace(/\s/g, '')
