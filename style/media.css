@@ -1591,6 +1591,10 @@
         padding: 12px;
     }
 
+    .photo__btns-first {
+        max-width: 100%;
+    }
+
     .bank__wrapper-item {
         max-width: 111px;
         width: 100%;

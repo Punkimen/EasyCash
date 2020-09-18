@@ -4360,6 +4360,7 @@ html .ui-button.ui-state-disabled:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .photo__wrapper-right {
@@ -4392,7 +4393,7 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 .photo__wrapper-list {
-    padding-left: 20px;
+    padding-left: 30px;
     position: relative;
 }
 
@@ -4414,6 +4415,31 @@ html .ui-button.ui-state-disabled:hover {
 
 .photo-error .photo-text {
     margin-bottom: 30px;
+}
+
+.photo__btns-first {
+    max-width: 330px;
+    width: 100%;
+    position: relative;
+}
+
+.photo__btns-first:before {
+    content: "Верифицировать через";
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    color: #A4A4A4;
+    margin-bottom: 5px;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.photo__btns-first .photo__btn {
+    margin-left: 0 !important;
 }
 
 .photo__error {
@@ -4457,7 +4483,6 @@ html .ui-button.ui-state-disabled:hover {
 .photo__btns {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
     position: relative;
 }
 
@@ -4486,16 +4511,6 @@ button.photo__btn {
     border: 1px solid #fF3D00;
 }
 
-.photo__btns:after {
-    content: "Верифицировать через";
-    position: absolute;
-    top: 0;
-    left: 10%;
-    font-size: 12px;
-    line-height: 20px;
-    color: #A4A4A4;
-}
-
 .bank__wrapper {
     display: flex;
     justify-content: space-between;
@@ -4509,6 +4524,7 @@ button.photo__btn {
     position: relative;
     align-items: center;
     display: flex;
+    color: #333;
 }
 
 .bank__item-bank+.bank__item-bank {

@@ -22,7 +22,7 @@
 
 <body>
     <main class="wrapper">
-        <div class="flex__contetn">
+        <div class="flex__content">
             <header class="header">
                 <div class="container">
                     <div class="header__inner">
@@ -83,9 +83,6 @@
                             <a href="#" class="account btn  btn-transparent">
                                 Личный кабинет
                             </a>
-                            <a href="#" class="head__exit-link">
-                                Выйти
-                            </a>
                         </div>
                         <div class="header__account-phone">
                             <a href="#" class="account-phone">
@@ -100,9 +97,7 @@
                                     d="M8 7C9.65685 7 11 5.65685 11 4C11 2.34315 9.65685 1 8 1C6.34315 1 5 2.34315 5 4C5 5.65685 6.34315 7 8 7Z"
                                     stroke="#333333" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                            <a href="#" class="head__exit-link">
-                                Выйти
-                            </a>
+
 
                         </div>
                     </div>
@@ -192,65 +187,29 @@
                 </div>
             </header>
             <section class="loan__link">
-                <a href="#">Верификация</a>
+                <a href="#">Войти в кабинет</a>
             </section>
-            <section class="photo bank">
-                <div class="photo__title">Верификация с помощью BankID</div>
-                <div class="photo-text">
-                    Выберете банк, в котором вы являетесь клиентом
-                </div>
-                <div class="bank__wrapper">
-                    <div class="bank__wrapper-item">
-                        <a href="#" class="bank__item-bank">
-                            <img src="images/bank-1.png" alt="">
-                            <div class="bank__item-name">Vostok</div>
-                        </a>
-                        <a href="#" class="bank__item-bank">
-                            <img src="images/bank-2.png" alt="">
-                            <div class="bank__item-name">Mono</div>
-                        </a>
-                        <a href="#" class="bank__item-bank">
-                            <img src="images/bank-3.png" alt="">
-                            <div class="bank__item-name">Alfa</div>
-                        </a>
-                    </div>
-                    <div class="bank__wrapper-item">
-                        <a href="#" class="bank__item-bank">
-                            <img src="images/bank-4.png" alt="">
-                            <div class="bank__item-name">Privat</div>
-                        </a>
-                        <a href="#" class="bank__item-bank">
-                            <img src="images/bank-5.png" alt="">
-                            <div class="bank__item-name">Concord</div>
-                        </a>
-                        <a href="#" class="bank__item-bank">
-                            <img src="images/bank-6.png" alt="">
-                            <div class="bank__item-name">Accord</div>
-                        </a>
-                    </div>
-                    <div class="bank__wrapper-item">
-                        <a href="#" class="bank__item-bank">
-                            <img src="images/bank-7.png" alt="">
-                            <div class="bank__item-name">Otp</div>
-                        </a>
-                        <a href="#" class="bank__item-bank">
-                            <img src="images/bank-8.png" alt="">
-                            <div class="bank__item-name">A-Bank</div>
-                        </a>
-                        <a href="#" class="bank__item-bank">
-                            <img src="images/bank-9.png" alt="">
-                            <div class="bank__item-name">Kredobank</div>
-                        </a>
-                    </div>
-                    <div class="bank__wrapper-item">
-                        <a href="#" class="bank__item-bank">
-                            <img src="images/bank-10.png" alt="">
-                            <div class="bank__item-name">MTB</div>
-                        </a>
-                        <a href="#" class="bank__item-bank">
-                            <img src="images/bank-11.png" alt="">
-                            <div class="bank__item-name">Idea</div>
-                        </a>
+            <section class="registration__phone">
+                <div class="container">
+                    <div class="registration__phone-inner">
+                        <div class="registration__phone-info">
+                            <div class="registration__phone-text">Введите действующий мобильный номер.
+                                Ваш телефон будет Вашим логином и на него
+                                будет отправлено сообщение с уникальным кодом, который необходим для продолжения
+                                регистрации.</div>
+                            <div class="registration__phone-text">Введением кода с СМС подтверждаю регистрацию в системе
+                                и предоставляю согласие на
+                                получение информации из бюро кредитных историй.
+                            </div>
+                            <div class="registration__phone-inp">
+                                <label>Телефон<span>*</span></label>
+                                <input type="phone">
+                                <a class="btn get__code" href="#">Получить код</a>
+                                <div class="register-btn">
+                                    <a class="register__enter" href="#">Войти в кабинет</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
