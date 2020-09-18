@@ -3347,6 +3347,7 @@ html .ui-button.ui-state-disabled:hover {
     text-align: center;
 }
 
+.head__exit-link,
 .personal__date-link {
     font-weight: 400;
     font-size: 14px;
@@ -4358,8 +4359,7 @@ html .ui-button.ui-state-disabled:hover {
 .photo__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 50px;
+    align-items: center;
 }
 
 .photo__wrapper-right {
@@ -4385,6 +4385,28 @@ html .ui-button.ui-state-disabled:hover {
     margin: 0 auto;
 }
 
+.photo__wrapper-img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.photo__wrapper-list {
+    padding-left: 20px;
+    position: relative;
+}
+
+.photo__wrapper-list+.photo__wrapper-list {
+    margin-top: 15px;
+}
+
+.photo__wrapper-list::after {
+    content: url(../images/icon1.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 .photo__clock {
     max-width: 66px;
     margin: 0 auto;
@@ -4406,19 +4428,23 @@ html .ui-button.ui-state-disabled:hover {
     line-height: 24px;
     text-align: center;
     color: #721C24;
-    padding: 12px 67px;
+    padding: 12px 5px;
     position: relative;
     margin-bottom: 20px;
 }
 
 .photo__error-text {
     position: relative;
+    font-weight: 700;
+    display: inline-block;
+    padding-left: 50px;
 }
 
 .photo__error-text::before {
     content: url(../images/attention.png);
     position: absolute;
     left: 0;
+    top: -5px;
 }
 
 .photo__form-enter {
@@ -4426,6 +4452,48 @@ html .ui-button.ui-state-disabled:hover {
     line-height: 20px;
     color: #FE5000;
     border-bottom: 1px dotted #FE5000;
+}
+
+.photo__btns {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    position: relative;
+}
+
+.photo__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 330px;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+button.photo__btn {
+    display: block;
+    border: none;
+    margin: 0 auto !important;
+}
+
+.photo__btn:last-child {
+    margin-left: 15px;
+}
+
+.photo__btn.transparent {
+    background: transparent !important;
+    border: 1px solid #fF3D00;
+}
+
+.photo__btns:after {
+    content: "Верифицировать через";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #A4A4A4;
 }
 
 .bank__wrapper {
@@ -4477,8 +4545,8 @@ html .ui-button.ui-state-disabled:hover {
     display: none;
     position: absolute;
     top: -130px;
-    display: none;
     display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
@@ -4508,4 +4576,83 @@ html .ui-button.ui-state-disabled:hover {
     max-width: 132px;
     width: 100%;
     height: auto;
+}
+
+.code__btn-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.code__btn-inner .register__enter {
+    margin-left: 0;
+}
+
+.registration__phone input {
+    margin-bottom: 10px !important;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.verification {
+    padding: 40px 0 80px;
+}
+
+.verification__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #333;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.verification__text {
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+    margin: 30px 0;
+}
+
+.verification__inner {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.verification__inner-text {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #A4A4A4;
+    max-width: 195px;
+}
+
+.verification__inner-item {
+    margin-top: 30px;
+}
+
+.popup__verification {
+    padding: 25px 50px;
+}
+
+.popup__verification .popup__text {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.popup__verification .timer {
+    font-size: 30px;
+    line-height: 20px;
+    color: #451472;
+    font-weight: bold;
+    margin-top: 10px;
 }
