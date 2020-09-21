@@ -4384,6 +4384,7 @@ html .ui-button.ui-state-disabled:hover {
 
 .photo-document .photo__wrapper-img {
     margin: 0 auto;
+    margin-top: 30px;
 }
 
 .photo__wrapper-img img {
@@ -4492,14 +4493,14 @@ html .ui-button.ui-state-disabled:hover {
     justify-content: center;
     max-width: 330px;
     width: 100%;
-    height: 60px;
     text-align: center;
 }
 
-button.photo__btn {
+a.photo__btn {
     display: block;
     border: none;
     margin: 0 auto !important;
+    padding: 20px 0;
 }
 
 .photo__btn:last-child {
@@ -4671,4 +4672,43 @@ button.photo__btn {
     color: #451472;
     font-weight: bold;
     margin-top: 10px;
+}
+
+.take__photo-phone {
+    max-width: 330px;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+    margin-top: 15px;
+}
+
+.take__photo-phone .photo__btn {
+    padding: 20px 0;
+}
+
+.take__photo-phone input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    color: transparent;
+    background: transparent;
+    cursor: pointer;
+    font-size: 0px;
+    line-height: 0px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+
+}
+
+.take__photo-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+    padding: 0 10px;
+    margin-bottom: 10px;
 }

@@ -910,6 +910,10 @@
         right: 0;
         left: auto;
     }
+
+    .take__photo-phone {
+        display: block;
+    }
 }
 
 @media (max-width: 680px) {
@@ -1624,9 +1628,11 @@
         transform: translateX(-50%);
     }
 
+    .photo__wrapper {
+        margin-bottom: 25px;
+    }
+
     .photo__btn {
-        margin-left: 0 !important;
-        max-width: 100%;
         margin-top: 10px;
     }
 }
@@ -1744,6 +1750,11 @@
 
     .code__btn-inner {
         display: block;
+    }
+
+    .photo-document {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
