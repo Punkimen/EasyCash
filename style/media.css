@@ -277,6 +277,10 @@
     .registration__phone {
         padding: 35px 0 75px;
     }
+
+    .photo__nowork {
+        display: block;
+    }
 }
 
 @media (max-width: 990px) {

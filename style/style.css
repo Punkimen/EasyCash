@@ -4731,6 +4731,7 @@ a.photo__btn {
 .photo__nowork {
     margin-top: 30px;
     text-align: center;
+    display: none;
 }
 
 .photo__nowork-btn,
@@ -4741,6 +4742,16 @@ a.photo__btn {
     width: 100%;
     margin-top: 10px;
     text-align: center;
+    cursor: pointer;
+}
+
+.photo__nowork-btn {
+    color: #333;
+    background: #A4A4A4;
+}
+
+.photo__nowork-btn:hover {
+    background: #808080;
 }
 
 .photo__work-btn {
