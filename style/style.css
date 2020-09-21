@@ -4363,6 +4363,12 @@ html .ui-button.ui-state-disabled:hover {
     margin-bottom: 50px;
 }
 
+.photo__wrapper-do {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .photo__wrapper-right {
     margin-left: 30px;
 }
@@ -4677,13 +4683,21 @@ a.photo__btn {
 .take__photo-phone {
     max-width: 330px;
     margin: 0 auto;
-    position: relative;
     display: none;
     margin-top: 15px;
 }
 
+.photo__wrapper-do .photo__btn {
+    margin-top: 20px !important;
+}
+
 .take__photo-phone .photo__btn {
     padding: 20px 0;
+}
+
+.take__photo-phone .photo__btn {
+    position: relative;
+    margin-left: 0;
 }
 
 .take__photo-phone input {
@@ -4704,6 +4718,7 @@ a.photo__btn {
 
 }
 
+.photo__nowork-text,
 .take__photo-text {
     text-align: center;
     font-size: 16px;
@@ -4711,4 +4726,23 @@ a.photo__btn {
     color: #333;
     padding: 0 10px;
     margin-bottom: 10px;
+}
+
+.photo__nowork {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.photo__nowork-btn,
+.photo__work-btn {
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 330px;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.photo__work-btn {
+    margin-bottom: 15px;
 }

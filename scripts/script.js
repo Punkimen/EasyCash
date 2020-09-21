@@ -134,3 +134,14 @@ $('.verification-exit').on('click', function () {
 $('.chatbot').on('click', function () {
     $('.chatbot__messanger').slideToggle()
 })
+
+$('.photo__nowork-btn').on('click', function () {
+    $('.photo__wrapper-do').hide();
+    $('.photo__nowork').hide();
+    $('.take__photo-phone').show();
+})
+$('.photo__work-btn').on('click', function () {
+    $('.photo__wrapper-do').show();
+    $('.photo__nowork').show();
+    $('.take__photo-phone').hide();
+})

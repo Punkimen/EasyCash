@@ -910,10 +910,6 @@
         right: 0;
         left: auto;
     }
-
-    .take__photo-phone {
-        display: block;
-    }
 }
 
 @media (max-width: 680px) {
