@@ -17,8 +17,11 @@
     <script src="scripts/slick.min.js" defer></script>
     <script src="scripts/jquery-ui.min.js"></script>
     <script src="scripts/jquery.ui.touch-punch.min.js"></script>
-    <script src="scripts/camera.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"
+        integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw=="
+        crossorigin="anonymous"></script>
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/webcam.js" defer></script>
 </head>
 
 <body>
@@ -196,10 +199,16 @@
         </div>
         <div class="photo__wrapper">
             <div class="photo__wrapper-img">
-                <img src="images/photo-girl.png" alt="">
+                <div id="my_camera"></div>
+                <div id="my_result"></div>
             </div>
         </div>
-        <button type="submit" class="photo__btn btn">Сделать фото</button>
+        <a href="javascript:void(take_snapshot())" class="photo__btn btn">Сделать фото</a>
+        <div class="take__photo-phone">
+            <div class="take__photo-text">Если камера не работает, сделайте фото с телефона</div>
+            <div class="photo__btn btn">Сделать фото</div>
+            <input type="file" accept="video/*" capture="user">
+        </div>
     </section>
     <footer class="footer">
         <div class="container">
