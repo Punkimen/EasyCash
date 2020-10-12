@@ -206,7 +206,7 @@
 
     .personal__phone {
         max-width: 100%;
-        margin-right: 0;
+        /* margin-right: 0; */
     }
 
     .confidant__form-inner {
@@ -526,7 +526,7 @@
     }
 
     .reg__step-item {
-        padding: 0;
+        padding: 0 15px;
     }
 
     .reg__title {

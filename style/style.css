@@ -240,23 +240,6 @@ li {
     background-color: #DCBA97;
 }
 
-
-
-.select_arrow {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    width: 6px;
-    height: 6px;
-    border: solid #E19A9D;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
-
-
 .lang {
     background-color: #000;
     border: 1px solid #000;
@@ -2067,7 +2050,7 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 .credit__date {
-    margin-top: 47px;
+    margin-top: 32px;
 }
 
 .control-group {
@@ -2152,7 +2135,7 @@ html .ui-button.ui-state-disabled:hover {
     border-radius: 5px;
     background: #ffffff;
     color: #D1D1D3;
-    margin: 11px 0 15px;
+    margin: 11px 0 0;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -2181,7 +2164,7 @@ html .ui-button.ui-state-disabled:hover {
 
 .select_arrow {
     position: absolute;
-    top: 50%;
+    top: 45px;
     right: 20px;
     width: 6px;
     height: 6px;
@@ -2217,7 +2200,7 @@ html .ui-button.ui-state-disabled:hover {
     display: block;
     padding: 10px 15px;
     outline: none;
-    margin: 11px 0 15px;
+    margin: 11px 0 0;
     width: 100%;
 }
 
@@ -2401,6 +2384,7 @@ html .ui-button.ui-state-disabled:hover {
 
 .reg__form-btns {
     text-align: center;
+    padding: 0 15px;
 }
 
 
@@ -2465,6 +2449,10 @@ html .ui-button.ui-state-disabled:hover {
     margin-left: 15px;
 }
 
+.passport__series-num.mn {
+    margin-left: 0;
+}
+
 .personal__gender,
 .passport__type {
     margin-bottom: 15px;
@@ -2476,7 +2464,7 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 .passport__date {
-    margin-top: 99px;
+    margin-top: 104px;
 }
 
 .reg__adress-name {
@@ -4756,4 +4744,47 @@ a.photo__btn {
 
 .photo__work-btn {
     margin-bottom: 15px;
+}
+
+#newBtn {
+    display: none;
+}
+
+#newBtn.visible {
+    display: block;
+}
+
+.reg__input,
+.select {
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    position: relative !important;
+}
+
+.inp-error {
+    position: relative !important;
+}
+
+.reg__input.inp-error input,
+.select.inp-error select {
+    border-color: #FF3D00;
+}
+
+.reg__input.inp-error .span-error {
+    display: block;
+}
+
+.select.inp-error .span-error {
+    display: block;
+}
+
+.span-error {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #EB5757;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: none;
 }

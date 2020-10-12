@@ -83,6 +83,10 @@ function steps() {
             inner += 1;
             $('.step__inner-num > span').html(inner);
         }
+        if (inner == 5) {
+            $('#newBtn').addClass('visible');
+            $('#step__btn-next').hide()
+        }
         console.log(inner)
     })
 
