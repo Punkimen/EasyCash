@@ -38,6 +38,11 @@ li {
     font-size: 14px;
     line-height: 16px;
     font-family: Ubuntu;
+    display: block;
+    outline: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
 }
 
 
