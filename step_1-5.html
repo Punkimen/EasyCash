@@ -19,6 +19,7 @@
     <script src="scripts/jquery.ui.touch-punch.min.js"></script>
     <script src="scripts/regcalc.js" defer></script>
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/step-valid.js" defer></script>
 </head>
 
 <body>
@@ -248,14 +249,14 @@
                     </div>
                 </div>
             </div>
-            <div class="reg__wraper">
-                <div class="reg__step-items">
-                    <div class="reg__step-item reg__step-code">
-                        <div class="reg__form">
-                            <div class="reg__form-left">
-                                <h3 class="reg__form-title">Персональные данные</h3>
-                                <form action="#">
-                                    <div class=" select">
+            <form id='form' action="#">
+                <div class="reg__wraper">
+                    <div class="reg__step-items">
+                        <div class="reg__step-item reg__step-code">
+                            <div class="reg__form">
+                                <div class="reg__form-left">
+                                    <h3 class="reg__form-title">Персональные данные</h3>
+                                    <div class="select">
                                         <label class="form__title" for="status">Семейное положение*</label>
                                         <select name="status">
                                             <option value="" hidden disabled selected>Выберите
@@ -281,35 +282,32 @@
                                     </div>
                                     <div class="reg__input">
                                         <label class="form__title" for="child">Количество детей*</label>
-                                        <input type="name" name="child">
+                                        <input class="req" type="name" name="child">
                                         <span class="span-error">The name is incorrect</span>
                                     </div>
-                                </form>
-                            </div>
-                            <div class="reg__form-right">
-                                <h3 class="reg__form-title">Данные доверенного контактного лица</h3>
-                                <form action="#">
+                                </div>
+                                <div class="reg__form-right ">
+                                    <h3 class="reg__form-title">Данные доверенного контактного лица</h3>
+
                                     <div class="reg__input personal__name">
                                         <label class="form__title" for="name">Имя*</label>
-                                        <input type="name" name="name">
+                                        <input class="req" type="name" name="name">
                                         <span class="span-error">The name is incorrect</span>
                                     </div>
                                     <div class="reg__input personal__surname">
                                         <label class="form__title" for="surname">Фамилия*</label>
-                                        <input type="name" name="surname">
+                                        <input class="req" type="name" name="surname">
                                         <span class="span-error">The name is incorrect</span>
                                     </div>
                                     <div class="reg__input personal__middleName">
                                         <label class="form__title" for="middleName">Отчество*</label>
-                                        <input type="name" name="middleName">
+                                        <input class="req" type="name" name="middleName">
                                         <span class="span-error">The name is incorrect</span>
                                     </div>
-                                    <div class="reg__input personal__row-phone">
-                                        <div class="personal__phone">
-                                            <label class="form__title" for="phone">Телефон*</label>
-                                            <input type="phone" name="phone">
-                                            <span class="span-error">The name is incorrect</span>
-                                        </div>
+                                    <div class="reg__input">
+                                        <label class="form__title" for="phone">Телефон*</label>
+                                        <input class="req" type="phone" name="phone">
+                                        <span class="span-error">The name is incorrect</span>
                                     </div>
                                     <div class="personal__status">
                                         <div class=" select">
@@ -325,15 +323,14 @@
                                             <span class="span-error">The name is incorrect</span>
                                         </div>
                                     </div>
-                                </form>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="reg__step-item reg__step-code">
-                        <h3 class="reg__form-title">Адрес проживания</h3>
-                        <div class="reg__form">
-                            <div class="reg__form-left">
-                                <form action="#" class="reg__adress">
+                        <div class="reg__step-item reg__step-code">
+                            <h3 class="reg__form-title">Адрес проживания</h3>
+                            <div class="reg__form">
+                                <div class="reg__form-left">
                                     <div class=" select">
                                         <label class="form__title" for="country">Страна*</label>
                                         <select name="region">
@@ -370,7 +367,8 @@
                                             <option class="district-option" value="10">Воронежская область</option>
                                             <option class="district-option" value="11">Ивановская область</option>
                                             <option class="district-option" value="12">Иркутская область</option>
-                                            <option class="district-option" value="13">Калининградская область</option>
+                                            <option class="district-option" value="13">Калининградская область
+                                            </option>
                                         </select>
                                         <div class="select_arrow">
                                         </div>
@@ -422,28 +420,26 @@
                                         </div>
                                         <span class="span-error">The name is incorrect</span>
                                     </div>
-                                </form>
-                            </div>
-                            <div class="reg__form-right">
-                                <form action="#" class="reg__adress">
+                                </div>
+                                <div class="reg__form-right">
                                     <div class="reg__input street-name">
                                         <label class="form__title" for="street">Улица*</label>
-                                        <input type="text" name="street">
+                                        <input class="req" type="text" name="street">
                                         <span class="span-error">The name is incorrect</span>
                                     </div>
                                     <div class="reg__input street-name">
                                         <label class="form__title" for="home">Дом*</label>
-                                        <input type="text" name="home">
+                                        <input class="req" type="text" name="home">
                                         <span class="span-error">The name is incorrect</span>
                                     </div>
                                     <div class="reg__input street-name">
                                         <label class="form__title" for="corp">Корпус*</label>
-                                        <input type="text" name="corp">
+                                        <input class="req" type="text" name="corp">
                                         <span class="span-error">The name is incorrect</span>
                                     </div>
                                     <div class="reg__input street-name">
                                         <label class="form__title" for="appart">Квартира*</label>
-                                        <input type="text" name="appart">
+                                        <input class="req" type="text" name="appart">
                                         <span class="span-error">The name is incorrect</span>
                                     </div>
                                     <div class="select">
@@ -458,323 +454,333 @@
                                     </div>
                                     <div class="reg__input street-name">
                                         <label class="form__title" for="index">Индекс*</label>
-                                        <input type="text" name="index">
-                                        <span class="span-error">The name is incorrect</span>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="form__adress-btn">
-                            <h3 class="reg__form-title">Адрес регистрации</h3>
-                            <div class="control-group">
-                                <label class="control control-checkbox">
-                                    <div class="contol-group-text">Совпадает с адресом проживания</div>
-                                    <input type="checkbox" />
-                                    <div class="control_indicator"></div>
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="reg__step-item reg__step-code">
-                        <h3 class="reg__form-title">Данные о месте работы</h3>
-                        <div class="reg__form">
-                            <div class="reg__form-left">
-                                <form class="reg__work" action="#">
-                                    <div class="reg__input work-name">
-                                        <label class="form__title" for="term">Название предприятия*</label>
-                                        <input type="text" name="term">
-                                        <span class="span-error">The name is incorrect</span>
-                                    </div>
-                                    <div class="passport__series">
-                                        <div class="select">
-                                            <label class="form__title" for="ndustry">Отрасль*</label>
-                                            <select name="ndustry">
-                                                <option value="" hidden disabled selected>Выберите из списка</option>
-                                                <option class="ndustry-option" value="1">Московская область</option>
-                                                <option class="ndustry-option" value="2">Амурская область</option>
-                                            </select>
-                                            <div class="select_arrow">
-                                            </div>
-                                            <span class="span-error">The name is incorrect</span>
-                                        </div>
-                                        <div class="reg__input passport__series-num">
-                                            <label class="form__title" for="series">Количество сотрудников*</label>
-                                            <input maxlength="6" type="text" name="series">
-                                            <span class="span-error">The name is incorrect</span>
-                                        </div>
-                                    </div>
-                                    <div class="passport__series">
-                                        <div class="reg__input passport__series-num mn">
-                                            <label class=" form__title" for="series">Рабочий телефон*</label>
-                                            <input maxlength="6" type="text" name="series">
-                                            <span class="span-error">The name is incorrect</span>
-                                        </div>
-                                        <div class="select ml">
-                                            <label class="form__title" for="ndustry">Занятость*</label>
-                                            <select name="ndustry">
-                                                <option value="" hidden disabled selected>Выберите из списка</option>
-                                                <option class="ndustry-option" value="1">Московская область</option>
-                                                <option class="ndustry-option" value="2">Амурская область</option>
-                                            </select>
-                                            <div class="select_arrow">
-                                            </div>
-                                            <span class="span-error">The name is incorrect</span>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="reg__form-right">
-                                <form class="reg__work" action="#">
-                                    <div class="select">
-                                        <label class="form__title" for="employment">Категория должности*</label>
-                                        <select name="employment">
-                                            <option value="" hidden disabled selected>Выберите из списка</option>
-                                            <option class="employment-option" value="1">Московская область</option>
-                                        </select>
-                                        <div class="select_arrow">
-                                        </div>
-                                        <span class="span-error">The name is incorrect</span>
-                                    </div>
-                                    <div class="select">
-                                        <label class="form__title" for="ndustry">Специальность*</label>
-                                        <select name="ndustry">
-                                            <option value="" hidden disabled selected>Выберите из списка</option>
-                                            <option class="ndustry-option" value="1">Московская область</option>
-                                            <option class="ndustry-option" value="2">Амурская область</option>
-                                            <option class="ndustry-option" value="3">Архангельская область</option>
-                                        </select>
-                                        <div class="select_arrow"> </div>
-                                        <span class="span-error">The name is incorrect</span>
-                                    </div>
-                                    <div class="passport__series">
-                                        <div class="select">
-                                            <label class="form__title" for="ndustry">Срок работы на предприятии*</label>
-                                            <select name="ndustry">
-                                                <option value="" hidden disabled selected>Выберите из списка</option>
-                                                <option class="ndustry-option" value="1">Московская область</option>
-                                                <option class="ndustry-option" value="2">Амурская область</option>
-                                            </select>
-                                            <div class="select_arrow">
-                                            </div>
-                                            <span class="span-error">The name is incorrect</span>
-                                        </div>
-                                        <div class="select ml">
-                                            <label class="form__title" for="ndustry">Общий стаж работы*</label>
-                                            <select name="ndustry">
-                                                <option value="" hidden disabled selected>Выберите из списка</option>
-                                                <option class="ndustry-option" value="1">Московская область</option>
-                                                <option class="ndustry-option" value="2">Амурская область</option>
-                                            </select>
-                                            <div class="select_arrow">
-                                            </div>
-                                            <span class="span-error">The name is incorrect</span>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="reg__form-confidant">
-                            <h3 class="reg__form-title">Адрес предприятия</h3>
-                            <div class="confidant__form-inner">
-                                <div class="confidant__form-left">
-                                    <div class="select">
-                                        <label class="form__title" for="region">Область*</label>
-                                        <select name="region">
-                                            <option value="" hidden disabled selected>Выберите из списка</option>
-                                            <option class="region-option" value="1">Московская область</option>
-                                        </select>
-                                        <div class="select_arrow">
-                                        </div>
-                                        <span class="span-error">The name is incorrect</span>
-                                    </div>
-                                    <div class="select">
-                                        <label class="form__title" for="district">Район*</label>
-                                        <select name="district">
-                                            <option value="" hidden disabled selected>Выберите из списка</option>
-                                            <option class="district-option" value="1">Московская область</option>
-                                            <option class="district-option" value="2">Амурская область</option>
-                                            <option class="district-option" value="3">Архангельская область</option>
-                                            <option class="district-option" value="4">Астраханская область</option>
-                                            <option class="district-option" value="5">Белгородская область</option>
-                                            <option class="district-option" value="6">Брянская область</option>
-                                            <option class="district-option" value="7">Владимирская область</option>
-                                            <option class="district-option" value="8">Волгоградская область</option>
-                                            <option class="district-option" value="9">Вологодская область</option>
-                                            <option class="district-option" value="10">Воронежская область</option>
-                                            <option class="district-option" value="11">Ивановская область</option>
-                                            <option class="district-option" value="12">Иркутская область</option>
-                                            <option class="district-option" value="13">Калининградская область</option>
-                                        </select>
-                                        <div class="select_arrow">
-                                        </div>
-                                        <span class="span-error">The name is incorrect</span>
-                                    </div>
-                                    <div class="select">
-                                        <label class="form__title" for="district">Тип населенного пункта*</label>
-                                        <select name="district">
-                                            <option value="" hidden disabled selected>Выберите из списка</option>
-                                            <option class="district-option" value="1">Московская область</option>
-                                            <option class="district-option" value="2">Амурская область</option>
-                                        </select>
-                                        <div class="select_arrow">
-                                        </div>
+                                        <input class="req" type="text" name="index">
                                         <span class="span-error">The name is incorrect</span>
                                     </div>
                                 </div>
-                                <div class="confidant__form-right">
-                                    <div class="passport__series first">
+                            </div>
+                            <div class="form__adress-btn">
+                                <h3 class="reg__form-title">Адрес регистрации</h3>
+                                <div class="control-group">
+                                    <label class="control control-checkbox">
+                                        <div class="contol-group-text">Совпадает с адресом проживания</div>
+                                        <input type="checkbox" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reg__step-item reg__step-code">
+                            <h3 class="reg__form-title">Данные о месте работы</h3>
+                            <div class="reg__form">
+                                <div class="reg__form-left">
+                                    <form class="reg__work" action="#">
+                                        <div class="reg__input work-name">
+                                            <label class="form__title" for="term">Название предприятия*</label>
+                                            <input class="req" type="text" name="term">
+                                            <span class="span-error">The name is incorrect</span>
+                                        </div>
+                                        <div class="passport__series">
+                                            <div class="select">
+                                                <label class="form__title" for="ndustry">Отрасль*</label>
+                                                <select name="ndustry">
+                                                    <option value="" hidden disabled selected>Выберите из списка
+                                                    </option>
+                                                    <option class="ndustry-option" value="1">Московская область</option>
+                                                    <option class="ndustry-option" value="2">Амурская область</option>
+                                                </select>
+                                                <div class="select_arrow">
+                                                </div>
+                                                <span class="span-error">The name is incorrect</span>
+                                            </div>
+                                            <div class="reg__input passport__series-num">
+                                                <label class="form__title" for="series">Количество сотрудников*</label>
+                                                <input class="req" maxlength="6" type="text" name="series">
+                                                <span class="span-error">The name is incorrect</span>
+                                            </div>
+                                        </div>
+                                        <div class="passport__series">
+                                            <div class="reg__input passport__series-num mn">
+                                                <label class=" form__title" for="series">Рабочий телефон*</label>
+                                                <input class="req" maxlength="6" type="text" name="series">
+                                                <span class="span-error">The name is incorrect</span>
+                                            </div>
+                                            <div class="select ml">
+                                                <label class="form__title" for="ndustry">Занятость*</label>
+                                                <select name="ndustry">
+                                                    <option value="" hidden disabled selected>Выберите из списка
+                                                    </option>
+                                                    <option class="ndustry-option" value="1">Московская область</option>
+                                                    <option class="ndustry-option" value="2">Амурская область</option>
+                                                </select>
+                                                <div class="select_arrow">
+                                                </div>
+                                                <span class="span-error">The name is incorrect</span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="reg__form-right">
+                                    <form class="reg__work" action="#">
                                         <div class="select">
-                                            <label class="form__title" for="ndustry">Название населенного
-                                                пункта**</label>
+                                            <label class="form__title" for="employment">Категория должности*</label>
+                                            <select name="employment">
+                                                <option value="" hidden disabled selected>Выберите из списка</option>
+                                                <option class="employment-option" value="1">Московская область</option>
+                                            </select>
+                                            <div class="select_arrow">
+                                            </div>
+                                            <span class="span-error">The name is incorrect</span>
+                                        </div>
+                                        <div class="select">
+                                            <label class="form__title" for="ndustry">Специальность*</label>
                                             <select name="ndustry">
                                                 <option value="" hidden disabled selected>Выберите из списка</option>
                                                 <option class="ndustry-option" value="1">Московская область</option>
                                                 <option class="ndustry-option" value="2">Амурская область</option>
+                                                <option class="ndustry-option" value="3">Архангельская область</option>
                                             </select>
-                                            <div class="select_arrow">
+                                            <div class="select_arrow"> </div>
+                                            <span class="span-error">The name is incorrect</span>
+                                        </div>
+                                        <div class="passport__series">
+                                            <div class="select">
+                                                <label class="form__title" for="ndustry">Срок работы на
+                                                    предприятии*</label>
+                                                <select name="ndustry">
+                                                    <option value="" hidden disabled selected>Выберите из списка
+                                                    </option>
+                                                    <option class="ndustry-option" value="1">Московская область</option>
+                                                    <option class="ndustry-option" value="2">Амурская область</option>
+                                                </select>
+                                                <div class="select_arrow">
+                                                </div>
+                                                <span class="span-error">The name is incorrect</span>
                                             </div>
-                                            <span class="span-error">The name is incorrect</span>
+                                            <div class="select ml">
+                                                <label class="form__title" for="ndustry">Общий стаж работы*</label>
+                                                <select name="ndustry">
+                                                    <option value="" hidden disabled selected>Выберите из списка
+                                                    </option>
+                                                    <option class="ndustry-option" value="1">Московская область</option>
+                                                    <option class="ndustry-option" value="2">Амурская область</option>
+                                                </select>
+                                                <div class="select_arrow">
+                                                </div>
+                                                <span class="span-error">The name is incorrect</span>
+                                            </div>
                                         </div>
-                                        <div class="reg__input passport__series-num">
-                                            <label class="form__title" for="series">Индекс*</label>
-                                            <input maxlength="6" type="text" name="series">
-                                            <span class="span-error">The name is incorrect</span>
-                                        </div>
-                                    </div>
-                                    <div class="passport__series">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="reg__form-confidant">
+                                <h3 class="reg__form-title">Адрес предприятия</h3>
+                                <div class="confidant__form-inner">
+                                    <div class="confidant__form-left">
                                         <div class="select">
-                                            <label class="form__title" for="ndustry">Тип улицы*</label>
-                                            <select name="ndustry">
-                                                <option value="" hidden disabled selected>Выберите</option>
-                                                <option class="ndustry-option" value="1">Московская область</option>
-                                                <option class="ndustry-option" value="2">Амурская область</option>
+                                            <label class="form__title" for="region">Область*</label>
+                                            <select name="region">
+                                                <option value="" hidden disabled selected>Выберите из списка</option>
+                                                <option class="region-option" value="1">Московская область</option>
                                             </select>
                                             <div class="select_arrow">
                                             </div>
                                             <span class="span-error">The name is incorrect</span>
                                         </div>
-                                        <div class="reg__input passport__series-num">
-                                            <label class="form__title" for="series">Улица*</label>
-                                            <input maxlength="6" type="text" name="series">
+                                        <div class="select">
+                                            <label class="form__title" for="district">Район*</label>
+                                            <select name="district">
+                                                <option value="" hidden disabled selected>Выберите из списка</option>
+                                                <option class="district-option" value="1">Московская область</option>
+                                                <option class="district-option" value="2">Амурская область</option>
+                                                <option class="district-option" value="3">Архангельская область</option>
+                                                <option class="district-option" value="4">Астраханская область</option>
+                                                <option class="district-option" value="5">Белгородская область</option>
+                                                <option class="district-option" value="6">Брянская область</option>
+                                                <option class="district-option" value="7">Владимирская область</option>
+                                                <option class="district-option" value="8">Волгоградская область</option>
+                                                <option class="district-option" value="9">Вологодская область</option>
+                                                <option class="district-option" value="10">Воронежская область</option>
+                                                <option class="district-option" value="11">Ивановская область</option>
+                                                <option class="district-option" value="12">Иркутская область</option>
+                                                <option class="district-option" value="13">Калининградская область
+                                                </option>
+                                            </select>
+                                            <div class="select_arrow">
+                                            </div>
+                                            <span class="span-error">The name is incorrect</span>
                                         </div>
-                                        <span class="span-error">The name is incorrect</span>
+                                        <div class="select">
+                                            <label class="form__title" for="district">Тип населенного пункта*</label>
+                                            <select name="district">
+                                                <option value="" hidden disabled selected>Выберите из списка</option>
+                                                <option class="district-option" value="1">Московская область</option>
+                                                <option class="district-option" value="2">Амурская область</option>
+                                            </select>
+                                            <div class="select_arrow">
+                                            </div>
+                                            <span class="span-error">The name is incorrect</span>
+                                        </div>
                                     </div>
-                                    <div class="reg__input reg__adress-home">
-                                        <div class="street-home">
-                                            <label class="form__title" for="home">Дом*</label>
-                                            <input type="text" name="home">
+                                    <div class="confidant__form-right">
+                                        <div class="passport__series first">
+                                            <div class="select">
+                                                <label class="form__title" for="ndustry">Название населенного
+                                                    пункта**</label>
+                                                <select name="ndustry">
+                                                    <option value="" hidden disabled selected>Выберите из списка
+                                                    </option>
+                                                    <option class="ndustry-option" value="1">Московская область</option>
+                                                    <option class="ndustry-option" value="2">Амурская область</option>
+                                                </select>
+                                                <div class="select_arrow">
+                                                </div>
+                                                <span class="span-error">The name is incorrect</span>
+                                            </div>
+                                            <div class="reg__input passport__series-num">
+                                                <label class="form__title" for="series">Индекс*</label>
+                                                <input class="req" maxlength="6" type="text" name="series">
+                                                <span class="span-error">The name is incorrect</span>
+                                            </div>
+                                        </div>
+                                        <div class="passport__series">
+                                            <div class="select">
+                                                <label class="form__title" for="ndustry">Тип улицы*</label>
+                                                <select name="ndustry">
+                                                    <option value="" hidden disabled selected>Выберите</option>
+                                                    <option class="ndustry-option" value="1">Московская область</option>
+                                                    <option class="ndustry-option" value="2">Амурская область</option>
+                                                </select>
+                                                <div class="select_arrow">
+                                                </div>
+                                                <span class="span-error">The name is incorrect</span>
+                                            </div>
+                                            <div class="reg__input passport__series-num">
+                                                <label class="form__title" for="series">Улица*</label>
+                                                <input maxlength="6" type="text" name="series">
+                                            </div>
                                             <span class="span-error">The name is incorrect</span>
                                         </div>
-                                        <div class="reg__input street-corps">
-                                            <label class="form__title" for="corps">Корпус*</label>
-                                            <input type="text" name="corps">
-                                            <span class="span-error">The name is incorrect</span>
-                                        </div>
-                                        <div class="reg__input street-flat">
-                                            <label class="form__title" for="flat">Офис*</label>
-                                            <input type="text" name="flat">
-                                            <span class="span-error">The name is incorrect</span>
+                                        <div class="reg__input reg__adress-home">
+                                            <div class="street-home">
+                                                <label class="form__title" for="home">Дом*</label>
+                                                <input class="req" type="text" name="home">
+                                                <span class="span-error">The name is incorrect</span>
+                                            </div>
+                                            <div class="reg__input street-corps">
+                                                <label class="form__title" for="corps">Корпус*</label>
+                                                <input type="text" name="corps">
+                                                <span class="span-error">The name is incorrect</span>
+                                            </div>
+                                            <div class="reg__input street-flat">
+                                                <label class="form__title" for="flat">Офис*</label>
+                                                <input type="text" name="flat">
+                                                <span class="span-error">The name is incorrect</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="reg__step-item reg__step-code">
-                        <h3 class="reg__form-title">Данные о доходах</h3>
-                        <div class="reg__form">
-                            <div class="reg__form-left">
-                                <form action="#">
-                                    <div class="personal__name">
-                                        <label class="form__title" for="last">Последний кредит*</label>
-                                        <input type="text" name="last">
-                                        <span class="span-error">The name is incorrect</span>
-                                    </div>
-                                    <div class="select">
-                                        <label class="form__title" for="pay">Планируемый ежемесячный платеж*</label>
-                                        <select name="pay">
-                                            <option value="" hidden disabled selected>Выберите
-                                            </option>
-                                            <option>Холост</option>
-                                            <option>В браке</option>
-                                        </select>
-                                        <div class="select_arrow">
+                        <div class="reg__step-item reg__step-code">
+                            <h3 class="reg__form-title">Данные о доходах</h3>
+                            <div class="reg__form">
+                                <div class="reg__form-left">
+                                    <form action="#">
+                                        <div class="personal__name">
+                                            <label class="form__title" for="last">Последний кредит*</label>
+                                            <input class="req" type="text" name="last">
+                                            <span class="span-error">The name is incorrect</span>
                                         </div>
-                                        <span class="span-error">The name is incorrect</span>
-                                    </div>
-                                    <div class="select">
-                                        <label class="form__title" for="summ">Сумма основного дохода*</label>
-                                        <select name="summ">
-                                            <option value="" hidden disabled selected>Выберите
-                                            </option>
-                                            <option>Холост</option>
-                                            <option>В браке</option>
-                                        </select>
-                                        <div class="select_arrow">
-                                        </div>
-                                        <span class="span-error">The name is incorrect</span>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="reg__form-right">
-                                <form action="#">
-                                    <div class="select">
-                                        <label class="form__title" for="summ">Сумма основного дохода*</label>
-                                        <select name="summ">
-                                            <option value="" hidden disabled selected>Выберите
-                                            </option>
-                                            <option>Холост</option>
-                                            <option>В браке</option>
-                                        </select>
-                                        <div class="select_arrow">
-                                        </div>
-                                        <span class="span-error">The name is incorrect</span>
-                                    </div>
-                                    <div class="credit__date">
-                                        <div class="passport__date-title">Дата следующей выплаты</div>
-                                        <div class="passport__date-inp">
-                                            <div class="select">
-                                                <label class="form__title" for="date-day">Дата</label>
-                                                <select name="date-day">
-                                                    <option class="date-day-option" value="1">1</option>
-                                                    <option class="date-day-option" value="2">2</option>
-                                                </select>
-                                                <div class="select_arrow">
-                                                </div>
-                                                <span class="span-error">The name is incorrect</span>
+                                        <div class="select">
+                                            <label class="form__title" for="pay">Планируемый ежемесячный платеж*</label>
+                                            <select name="pay">
+                                                <option value="" hidden disabled selected>Выберите
+                                                </option>
+                                                <option>Холост</option>
+                                                <option>В браке</option>
+                                            </select>
+                                            <div class="select_arrow">
                                             </div>
-                                            <div class="select">
-                                                <label class="form__title" for="date-month">Месяц</label>
-                                                <select name="date-month">
-                                                    <option class="date-month-option" value="1">Январь</option>
-                                                </select>
-                                                <div class="select_arrow">
-                                                </div>
-                                                <span class="span-error">The name is incorrect</span>
+                                            <span class="span-error">The name is incorrect</span>
+                                        </div>
+                                        <div class="select">
+                                            <label class="form__title" for="summ">Сумма основного дохода*</label>
+                                            <select name="summ">
+                                                <option value="" hidden disabled selected>Выберите
+                                                </option>
+                                                <option>Холост</option>
+                                                <option>В браке</option>
+                                            </select>
+                                            <div class="select_arrow">
                                             </div>
-                                            <div class="select">
-                                                <label class="form__title" for="date-year">Год</label>
-                                                <select name="date-year">
-                                                    <option class="date-year-option" value="2020">2020</option>
-                                                    <option class="date-year-option" value="2019">2019</option>
-                                                </select>
-                                                <div class="select_arrow">
+                                            <span class="span-error">The name is incorrect</span>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="reg__form-right">
+                                    <form action="#">
+                                        <div class="select">
+                                            <label class="form__title" for="summ">Сумма основного дохода*</label>
+                                            <select name="summ">
+                                                <option value="" hidden disabled selected>Выберите
+                                                </option>
+                                                <option>Холост</option>
+                                                <option>В браке</option>
+                                            </select>
+                                            <div class="select_arrow">
+                                            </div>
+                                            <span class="span-error">The name is incorrect</span>
+                                        </div>
+                                        <div class="credit__date">
+                                            <div class="passport__date-title">Дата следующей выплаты</div>
+                                            <div class="passport__date-inp">
+                                                <div class="select">
+                                                    <label class="form__title" for="date-day">Дата</label>
+                                                    <select name="date-day">
+                                                        <option class="date-day-option" value="1">1</option>
+                                                        <option class="date-day-option" value="2">2</option>
+                                                    </select>
+                                                    <div class="select_arrow">
+                                                    </div>
+                                                    <span class="span-error">The name is incorrect</span>
                                                 </div>
-                                                <span class="span-error">The name is incorrect</span>
+                                                <div class="select">
+                                                    <label class="form__title" for="date-month">Месяц</label>
+                                                    <select name="date-month">
+                                                        <option class="date-month-option" value="1">Январь</option>
+                                                    </select>
+                                                    <div class="select_arrow">
+                                                    </div>
+                                                    <span class="span-error">The name is incorrect</span>
+                                                </div>
+                                                <div class="select">
+                                                    <label class="form__title" for="date-year">Год</label>
+                                                    <select name="date-year">
+                                                        <option class="date-year-option" value="2020">2020</option>
+                                                        <option class="date-year-option" value="2019">2019</option>
+                                                    </select>
+                                                    <div class="select_arrow">
+                                                    </div>
+                                                    <span class="span-error">The name is incorrect</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="reg__form-btns">
+                        <button type="submit" id="step__btn-next" class="reg__form-btn btn">Продолжить</button>
+                        <button type="submit" id="newBtn" class="reg__form-btn btn">Другая кнопка</button>
+                        <a id="step__btn-prev" class="reg__form-back" href="#">Вернуться назад</a>
+                    </div>
+                    <div id="message-error">
+                        Вы заполнили не все поля!
+                    </div>
                 </div>
-                <div class="reg__form-btns">
-                    <button id="step__btn-next" class="reg__form-btn btn">Продолжить</button>
-                    <button id="newBtn" class="reg__form-btn btn">Другая кнопка</button>
-                    <a id="step__btn-prev" class="reg__form-back" href="#">Вернуться назад</a>
-                </div>
-            </div>
+            </form>
         </div>
 
     </section>

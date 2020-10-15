@@ -213,6 +213,7 @@ li {
     padding: 13px 30px;
     border-radius: 5px;
     margin-left: 25px;
+    white-space: nowrap;
 }
 
 .account.btn-transparent {
@@ -2382,9 +2383,9 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 .personal__phone {
-    max-width: 315px;
+    /* max-width: 315px; */
     width: 100%;
-    margin-right: 15px;
+    /* margin-right: 15px; */
 }
 
 .reg__form-btns {
@@ -4791,5 +4792,13 @@ a.photo__btn {
     position: absolute;
     bottom: -10px;
     left: 0;
+    display: none;
+}
+
+#message-error {
+    text-align: center;
+    color: red;
+    padding-bottom: 15px;
+    text-transform: uppercase;
     display: none;
 }

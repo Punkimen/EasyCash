@@ -68,43 +68,86 @@ $('.reg__step-code').eq(0).css('display', 'block');
 
 $('.passport__content-section').addClass('visible');
 $('.passport__inner').addClass('visible');
-let stepItem = $('.reg__step-code')
+let stepItem = $('.reg__step-code');
+let index = 0;
 
-function steps() {
-    let index = 0;
-    $('#step__btn-next').on('click', function (event) {
-        stepItem.eq(index).fadeOut();
-        if (index !== 3) {
-            index += 1;
-        }
-        stepItem.eq(index).fadeIn();
-        let inner = +$('.step__inner-num > span').html()
-        if (inner !== 5) {
-            inner += 1;
-            $('.step__inner-num > span').html(inner);
-        }
-        if (inner == 5) {
-            $('#newBtn').addClass('visible');
-            $('#step__btn-next').hide()
-        }
-        console.log(inner)
-    })
+// function steps() {
+//     // let index = 0;
+//     $('#step__btn-next').on('click', function (event) {
+//         stepItem.eq(index).fadeOut();
+//         if (index !== 3) {
+//             index += 1;
+//         }
+//         stepItem.eq(index).fadeIn();
+//         let inner = +$('.step__inner-num > span').html()
+//         if (inner !== 5) {
+//             inner += 1;
+//             $('.step__inner-num > span').html(inner);
+//         }
+//         if (inner == 5) {
+//             $('#newBtn').addClass('visible');
+//             $('#step__btn-next').hide()
+//         }
+//         return false
+//     })
 
-    $('#step__btn-prev').on('click', function () {
-        stepItem.eq(index).fadeOut();
-        if (index !== 0) {
-            index -= 1;
-        }
-        stepItem.eq(index).fadeIn();
-        let inner = +$('.step__inner-num > span').html()
-        if (inner !== 2) {
-            inner -= 1;
-            $('.step__inner-num > span').html(inner);
-            console.log(inner)
-        }
-    })
-}
-steps();
+//     $('#step__btn-prev').on('click', function () {
+//         stepItem.eq(index).fadeOut();
+//         if (index !== 0) {
+//             index -= 1;
+//         }
+//         stepItem.eq(index).fadeIn();
+//         let inner = +$('.step__inner-num > span').html()
+//         if (inner !== 2) {
+//             inner -= 1;
+//             $('.step__inner-num > span').html(inner);
+//             console.log(inner)
+//         };
+//         if (inner !== 5) {
+//             $('#newBtn').removeClass('visible');
+//             $('#step__btn-next').show()
+//         }
+//     })
+//     function validateForm() {
+//         let error = 0;
+//         let req = $('.req');
+//         console.log('work')
+//         $.each(req, function (index) {
+//             const input = req.eq(index)
+//             removeError(input);
+//             if (input.value === '') {
+//                 formAddError(input);
+//                 error++;
+//             };
+//             if (error !== 0) {
+//                 return false
+//             }
+//         })
+
+//     }
+//     function addError(input) {
+//         input.parent('reg__input').addClass('inp-error')
+//     }
+//     function removeError(input) {
+//         input.parent('reg__input').removeClass('inp-error')
+//     }
+// }
+// steps();
+// function validateForm() {
+//     let x, y, i, valid = true;
+//     x = $('.reg__step-code');
+//     y = x.eq(index).find('input, select');
+//     console.log(y);
+//     for (i = 0; i < y.length; i++) {
+//         if (y.eq(i).value == "") {
+//             y.eq(i).addClass('inp-error');
+//             valid = false;
+//             console.log(y.eq(i).value)
+//         }
+//     }
+//     return valid;
+// }
+
 $('#price-range-filter-header').click(function () {
     FilterContainerSlideUpDown('filter_but', 'price-range-filter-header');
 });
