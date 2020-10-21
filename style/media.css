@@ -37,6 +37,15 @@
 .account-verification.yesVer {
     text-align: center;
 } */
+    .account-verification {
+        display: block;
+        position: fixed;
+        margin: 7px auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: auto;
+    }
 
     .tabs__left {
         max-width: 100%;
@@ -1644,10 +1653,13 @@
     }
 
     .account-verification {
+        position: relative;
+        top: auto;
+        left: auto;
         bottom: 0;
         display: block;
-        position: relative;
         margin: 7px auto;
+        transform: translate(0, 0);
     }
 }
 
