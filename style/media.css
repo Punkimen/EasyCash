@@ -21,22 +21,22 @@
         display: block;
     }
 
-    .account-verification.getVer .verification__content {
-        max-width: 350px;
-        margin: 0 auto;
-    }
+    /* .account-verification.getVer .verification__content {
+    max-width: 350px;
+    margin: 0 auto;
+}
 
-    .account-verification.getVer .verification-text {
-        text-align: center;
-    }
+.account-verification.getVer .verification-text {
+    text-align: center;
+}
 
-    .account-verification {
-        margin-bottom: 15px;
-    }
+.account-verification {
+    margin-bottom: 15px;
+}
 
-    .account-verification.yesVer {
-        text-align: center;
-    }
+.account-verification.yesVer {
+    text-align: center;
+} */
 
     .tabs__left {
         max-width: 100%;
@@ -552,6 +552,7 @@
 
     .personal__date-btns {
         text-align: center;
+        display: block;
     }
 
     .personal__date-btns .personal__date-btn {
@@ -1640,6 +1641,13 @@
 
     .photo__btn {
         margin-top: 10px;
+    }
+
+    .account-verification {
+        bottom: 0;
+        display: block;
+        position: relative;
+        margin: 7px auto;
     }
 }
 

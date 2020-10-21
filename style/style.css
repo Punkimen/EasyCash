@@ -3328,6 +3328,8 @@ html .ui-button.ui-state-disabled:hover {
 
 .personal__date-btns {
     margin-top: 40px;
+    display: flex;
+    align-items: center;
 }
 
 .personal__date-btn {
@@ -3339,6 +3341,11 @@ html .ui-button.ui-state-disabled:hover {
     line-height: 20px;
     color: #333;
     text-align: center;
+}
+
+.personal__date-link {
+    flex: 0 0 auto;
+    margin-left: 15px;
 }
 
 .head__exit-link,
@@ -4240,9 +4247,21 @@ html .ui-button.ui-state-disabled:hover {
     line-height: 16px;
     text-align: center;
     padding: 20px;
-    position: relative;
+    /* position: relative; */
+    bottom: 50px;
     border-radius: 5px;
     margin-top: 15px;
+    position: fixed;
+    max-width: 265px;
+    width: 100%;
+    z-index: 5;
+    display: none;
+}
+
+.account-verification.notVer .verification__content {
+    display: block;
+    max-width: 265px;
+    margin: 0 auto;
 }
 
 .account-verification.getVer {

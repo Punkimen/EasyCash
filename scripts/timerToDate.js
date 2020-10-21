@@ -1,4 +1,4 @@
-let formatDate = 'May 7, 2021 00:00:00'
+let formatDate = 'December 31, 2020 00:00:00'
 
 let toDate = new Date(formatDate).getTime();
 let timer = setInterval(function () {
