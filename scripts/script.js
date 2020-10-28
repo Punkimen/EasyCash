@@ -1,13 +1,13 @@
 let lang = $('.account__language-item')
-lang.on('click', function () {
+lang.on('click', function() {
     $(this).addClass('active').siblings().removeClass('active');
 })
 
-$('#about').on('click', function () {
+$('#about').on('click', function() {
     $('.mainMenu').slideToggle();;
 });
 
-$('.accordion__title').on('click', function () {
+$('.accordion__title').on('click', function() {
     $(this).toggleClass('active').next().slideToggle();
     return false;
 });
@@ -19,45 +19,45 @@ $('.info__slider').slick({
     adaptiveHeight: true
 });
 
-$('.burger__menu').on('click', function () {
+$('.burger__menu').on('click', function() {
     $('.header__menu').slideToggle();
     return false;
 })
 
 
 if ($(window).width() <= '750') {
-    $('.menu__list-link').on('click', function () {
+    $('.menu__list-link').on('click', function() {
         $('.header__menu').slideToggle();
     })
 }
 
-$('.credits-contract').on('click', function () {
+$('.credits-contract').on('click', function() {
     $(this).toggleClass('active').parent(this).next().slideToggle();
 })
 
-$('.pay-cards-btn').on('click', function () {
+$('.pay-cards-btn').on('click', function() {
     $('.pay-cards-add').slideToggle();
     return false;
 })
 
 
-$('.file').on('change', function () {
+$('.file').on('change', function() {
     $(this).children('.select-file').css('display', 'none');
     $(this).children('.downloaded-file').css('display', 'inline-block');
 })
 
-$('select').on('change', function () {
+$('select').on('change', function() {
     $(this).css('color', '#333');
     $('.lang').css('color', '#fff');
 })
 
-$('#radio_idCard').on('click', function (event) {
+$('#radio_idCard').on('click', function(event) {
     $('.passport__content-section').removeClass('visible');
     $('.idCard__content-section').addClass('visible');
     $('.passport__inner').removeClass('visible');
     $('.idCard__inner').addClass('visible');
 })
-$('#radio_passport').on('click', function (event) {
+$('#radio_passport').on('click', function(event) {
     $('.passport__content-section').addClass('visible');
     $('.idCard__content-section').removeClass('visible');
     $('.passport__inner').addClass('visible');
@@ -148,20 +148,20 @@ let index = 0;
 //     return valid;
 // }
 
-$('#price-range-filter-header').click(function () {
+$('#price-range-filter-header').click(function() {
     FilterContainerSlideUpDown('filter_but', 'price-range-filter-header');
 });
-$(function () {
+$(function() {
     $("#slider-range").slider({
         range: true,
         min: 0,
         max: 300,
         values: [0, 300],
         step: 5,
-        slide: function (event, ui) {
+        slide: function(event, ui) {
             $("#slider-range-caption").html('<?=$currency_type->symbol?>' + ui.values[0] + ' - ' + '<?=$currency_type->symbol?>' + ui.values[1]);
         },
-        change: function (event, ui) {
+        change: function(event, ui) {
             ApplyPriceRangeFilter(ui.values[0], ui.values[1]);
         }
 
@@ -171,35 +171,45 @@ $(function () {
 
     //initialise jquery scrollbar
 });
-$('.tabs__name-item').on('click', function () {
+$('.tabs__name-item').on('click', function() {
     $(this).addClass('active').siblings().removeClass('active')
 })
 
-$('.verification-exit').on('click', function () {
+$('.verification-exit').on('click', function() {
     $(this).parent().hide()
 })
-$('.chatbot').on('click', function () {
+$('.chatbot').on('click', function() {
     $('.chatbot__messanger').slideToggle()
 })
 
-$('.photo__nowork-btn').on('click', function () {
+$('.photo__nowork-btn').on('click', function() {
     $('.photo__wrapper-do').hide();
     $('.photo__nowork').hide();
     $('.take__photo-phone').show();
 })
-$('.photo__work-btn').on('click', function () {
+$('.photo__work-btn').on('click', function() {
     $('.photo__wrapper-do').show();
     $('.photo__nowork').show();
     $('.take__photo-phone').hide();
 })
 
 if ($(window).width() >= '450') {
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         if ($(window).scrollTop() > 50) {
             $('.account-verification').fadeIn(500)
         } else {
             $('.account-verification').fadeOut(300)
         }
         console.log($(window).scrollTop())
-    });;
+    })
 }
+
+
+$('#about-link').on('click', function() {
+    $('.footer__left-about').slideToggle();
+    return false;
+})
+$('#useful-link').on('click', function() {
+    $('.footer__left-useful').slideToggle();
+    return false;
+})

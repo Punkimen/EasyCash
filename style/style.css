@@ -45,7 +45,6 @@ li {
     cursor: pointer;
 }
 
-
 .btn.btn-transparent {
     background: #fff;
     border: 1px solid #FF3D00;
@@ -81,7 +80,9 @@ li {
     margin-bottom: 50px;
 }
 
+
 /* header-media */
+
 
 /* .header__account-phone {
     display: none;
@@ -205,7 +206,6 @@ li {
     margin-left: 15px;
 }
 
-
 .account {
     font-size: 14px;
     line-height: 16px;
@@ -239,7 +239,6 @@ li {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
-
 
 .hidden {
     color: #D1D1D3 !important;
@@ -284,7 +283,9 @@ lang:focus {
     border: 1px solid #000;
 }
 
+
 /* mainMenu */
+
 .mainMenu {
     color: #333;
     padding: 0;
@@ -369,7 +370,9 @@ lang:focus {
     margin-top: 20px;
 }
 
+
 /* slider */
+
 .slick-track {
     height: 100%;
 }
@@ -378,7 +381,10 @@ lang:focus {
     height: 100%;
 }
 
+
 /* Dots */
+
+
 /* .slick-dotted.slick-slider {
     margin-bottom: 30px;
 } */
@@ -421,7 +427,6 @@ lang:focus {
     opacity: 0.7;
 }
 
-
 .slick-dots li.slick-active button {
     background: #FE5000;
 }
@@ -447,7 +452,6 @@ lang:focus {
     text-align: center;
     opacity: .25;
     color: black;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -457,11 +461,12 @@ lang:focus {
     color: black;
 }
 
+
 /* credits */
+
 .credits {
     position: relative;
 }
-
 
 .credits__info {
     /* position: absolute; */
@@ -469,7 +474,6 @@ lang:focus {
     height: 100%;
     z-index: 1;
 }
-
 
 .info__slider {
     height: 100%;
@@ -498,8 +502,6 @@ lang:focus {
     padding: 100px 0 150px;
 }
 
-
-
 .info__slider-title {
     font-weight: 700;
     font-size: 35px;
@@ -507,8 +509,6 @@ lang:focus {
     width: 100%;
     margin-bottom: 30px;
 }
-
-
 
 .info__slider-text {
     font-family: 'Montserrat', sans-serif;
@@ -545,7 +545,6 @@ lang:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 .credits__calc {
@@ -794,11 +793,14 @@ html .ui-button.ui-state-disabled:hover {
     transform: translate(-50%, -50%) rotate(90deg);
 }
 
+
 /* main */
+
 .content {
     background: linear-gradient(100.11deg, #000000 13.08%, #2C2C2C 49.04%, #000000 82.12%);
     color: #fff;
 }
+
 
 /* loan */
 
@@ -857,6 +859,7 @@ html .ui-button.ui-state-disabled:hover {
     line-height: 20px;
 }
 
+
 /* benefits */
 
 .benefits {
@@ -867,7 +870,6 @@ html .ui-button.ui-state-disabled:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
 .benefits__item {
@@ -942,7 +944,9 @@ html .ui-button.ui-state-disabled:hover {
     font-weight: 400;
 }
 
+
 /* how */
+
 .how {
     padding: 90px 0px 100px;
     background: linear-gradient(102.95deg, #B534BE 22.8%, #451472 84.04%);
@@ -994,7 +998,9 @@ html .ui-button.ui-state-disabled:hover {
     font-weight: 400;
 }
 
+
 /* questions */
+
 .questions {
     padding-top: 30px;
     padding-bottom: 90px;
@@ -1056,7 +1062,6 @@ html .ui-button.ui-state-disabled:hover {
     border-radius: 5px 5px 0px 0px;
     outline: none;
 }
-
 
 .accordion__title a:hover svg path {
     fill: #fff;
@@ -1172,7 +1177,9 @@ html .ui-button.ui-state-disabled:hover {
     margin-top: 30px;
 }
 
+
 /* safety */
+
 .safety {
     padding: 30px 15px 90px;
     background: #F4F4F9;
@@ -1208,6 +1215,7 @@ html .ui-button.ui-state-disabled:hover {
     font-size: 14px;
     line-height: 20px;
 }
+
 
 /* repay */
 
@@ -1287,6 +1295,7 @@ html .ui-button.ui-state-disabled:hover {
     margin-right: 20px;
 }
 
+
 /* online */
 
 .online {
@@ -1360,7 +1369,9 @@ html .ui-button.ui-state-disabled:hover {
     margin-top: 35px;
 }
 
+
 /* kinds */
+
 .kinds {
     padding-top: 90px;
     font-family: 'Ubhuntu', sans-serif;
@@ -1402,7 +1413,9 @@ html .ui-button.ui-state-disabled:hover {
     margin-left: 15px;
 }
 
+
 /* city */
+
 .city {
     padding-top: 40px;
     font-family: 'Ubhuntu', sans-serif;
@@ -1439,6 +1452,7 @@ html .ui-button.ui-state-disabled:hover {
     margin-left: 15px;
 }
 
+
 /* footer */
 
 .footer {
@@ -1460,10 +1474,6 @@ html .ui-button.ui-state-disabled:hover {
 .footer__wrapper-left {
     width: 60%;
     display: flex;
-}
-
-.footer__left-title+.footer__left-title {
-    margin-left: 100px;
 }
 
 .footer__left-title a {
@@ -1517,6 +1527,7 @@ html .ui-button.ui-state-disabled:hover {
 .social__icon+.social__icon {
     margin-left: 5px;
 }
+
 
 /* popups */
 
@@ -1581,14 +1592,12 @@ html .ui-button.ui-state-disabled:hover {
     display: block;
 }
 
-
 .popup__mistake {
     max-width: 532px;
     width: 100%;
     text-align: center;
     padding: 50px 60px 54px;
 }
-
 
 .popup__congr {
     padding: 50px 60px 40px;
@@ -1717,6 +1726,7 @@ html .ui-button.ui-state-disabled:hover {
     margin-bottom: 10px;
     padding: 10px 0;
 }
+
 
 /* New Pages-Refistration */
 
@@ -1909,8 +1919,8 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 
-
 /* New-page-steps */
+
 .step {
     text-align: center;
     background: linear-gradient(102.95deg, #B534BE 22.8%, #451472 84.04%);
@@ -1975,7 +1985,6 @@ html .ui-button.ui-state-disabled:hover {
     border: 2px solid #580575;
 }
 
-
 .control_indicator:after {
     box-sizing: unset;
     content: '';
@@ -1986,7 +1995,6 @@ html .ui-button.ui-state-disabled:hover {
 .control input:checked~.control_indicator:after {
     display: block;
 }
-
 
 .control-radio .control_indicator {
     border-radius: 50%;
@@ -2191,7 +2199,6 @@ html .ui-button.ui-state-disabled:hover {
     border-top-color: #EAECF0;
 }
 
-
 .reg {
     font-family: 'Ubuntu', sans-serif;
     color: #333333;
@@ -2393,7 +2400,6 @@ html .ui-button.ui-state-disabled:hover {
     padding: 0 15px;
 }
 
-
 .reg__form-btn {
     display: block;
     background: linear-gradient(103.64deg, #FFAE11 20.04%, #FF3D00 83.31%);
@@ -2481,7 +2487,6 @@ html .ui-button.ui-state-disabled:hover {
     max-width: 145px;
     margin-right: 15px;
 }
-
 
 .street-name {
     width: 100%;
@@ -2626,7 +2631,6 @@ html .ui-button.ui-state-disabled:hover {
     margin-left: 15px;
 }
 
-
 .reg-six .reg__form-right {
     max-width: 100%;
     width: 100%;
@@ -2669,6 +2673,7 @@ html .ui-button.ui-state-disabled:hover {
     max-width: 30%;
     width: 100%;
 }
+
 
 /* new page Personal Account */
 
@@ -2759,7 +2764,6 @@ html .ui-button.ui-state-disabled:hover {
     display: none;
 }
 
-
 .tabs__name-arrow img {
     top: 50%;
     left: 50%;
@@ -2779,7 +2783,6 @@ html .ui-button.ui-state-disabled:hover {
     width: 100%;
     margin-left: 30px;
 }
-
 
 .tabs__content-section+.tabs__content-section {
     padding-top: 50px;
@@ -2926,14 +2929,11 @@ html .ui-button.ui-state-disabled:hover {
     display: block;
 }
 
-
-
 .btn-verification {
     position: absolute !important;
     margin: 0;
     bottom: 0;
     left: 30%;
-
 }
 
 .table__transiction-head,
@@ -3178,7 +3178,6 @@ html .ui-button.ui-state-disabled:hover {
     align-items: center;
 }
 
-
 .social-delete {
     margin-left: 20px;
 }
@@ -3400,7 +3399,6 @@ html .ui-button.ui-state-disabled:hover {
     font-size: 14px;
     line-height: 20px;
     color: #333333;
-
 }
 
 .repay-item-num {
@@ -3499,7 +3497,9 @@ html .ui-button.ui-state-disabled:hover {
     color: #1d1d1d;
 }
 
+
 /* legal_information */
+
 .information,
 .credit__passport {
     padding: 50px 0 90px;
@@ -3564,7 +3564,9 @@ html .ui-button.ui-state-disabled:hover {
     width: 458px;
 }
 
+
 /* News */
+
 .hotpng {
     display: block;
     max-width: 690px;
@@ -3704,6 +3706,7 @@ html .ui-button.ui-state-disabled:hover {
     fill: #fff;
 }
 
+
 /* news-block */
 
 .news__info {
@@ -3776,6 +3779,7 @@ html .ui-button.ui-state-disabled:hover {
 
 
 /* answer */
+
 .answer {
     padding: 50px 0 120px;
     font-family: 'Ubuntu', sans-serif;
@@ -3833,6 +3837,7 @@ html .ui-button.ui-state-disabled:hover {
 
 
 /* about */
+
 .about {
     padding: 50px 0 80px;
     font-family: 'Ubuntu', sans-serif;
@@ -3891,7 +3896,9 @@ html .ui-button.ui-state-disabled:hover {
     margin-bottom: 25px;
 }
 
+
 /* contacts */
+
 .contacts {
     font-family: 'Ubuntu', sans-serif;
     padding: 50px 0 50px;
@@ -4044,7 +4051,9 @@ html .ui-button.ui-state-disabled:hover {
     background: transparent;
 }
 
+
 /* confirm */
+
 .confirm {
     padding: 50px 0 120px;
 }
@@ -4079,7 +4088,9 @@ html .ui-button.ui-state-disabled:hover {
     margin-bottom: 20px;
 }
 
+
 /* error */
+
 .error {
     font-family: 'Ubuntu', sans-serif;
     padding-bottom: 80px;
@@ -4137,7 +4148,9 @@ html .ui-button.ui-state-disabled:hover {
     color: #333;
 }
 
+
 /* loan_credit */
+
 .reparing {
     background: #E5E5E5;
     padding: 25px 0 50px;
@@ -4728,7 +4741,6 @@ a.photo__btn {
     position: absolute;
     top: 0;
     opacity: 0;
-
 }
 
 .photo__nowork-text,
@@ -4820,4 +4832,31 @@ a.photo__btn {
     padding-bottom: 15px;
     text-transform: uppercase;
     display: none;
+}
+
+
+/* footer */
+
+.footer__left-content {
+    max-width: 250px;
+    width: 100%;
+}
+
+
+/* .footer__left-content+.footer__left-content {
+    margin-left: 100px;
+} */
+
+.footer__left-links {
+    margin-top: 15px;
+    display: none;
+}
+
+.footer__left-links a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.footer__left-links li+li {
+    margin-top: 5px;
 }
