@@ -2321,7 +2321,16 @@ html .ui-button.ui-state-disabled:hover {
 .ident__inner {
     display: flex;
     justify-content: space-between;
-    padding: 0 70px 5px;
+    align-items: center;
+    /* padding: 0 70px 5px; */
+    padding: 0 0px 5px;
+    margin-bottom: 10px;
+}
+
+.reg__ident-info {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 12px;
 }
 
 .ident__inner-item {
@@ -2329,7 +2338,21 @@ html .ui-button.ui-state-disabled:hover {
     max-width: 240px;
 }
 
-.ident__inner-item+.ident__inner-item {
+.ident__inner-item__text {
+    text-align: center;
+    font-size: 10px;
+}
+
+.ident__inner-block {
+    display: flex;
+}
+
+.ident__inner-item-text {
+    max-width: 100%;
+    margin-left: 15px;
+}
+
+.ident__inner-block .ident__inner-item+.ident__inner-item {
     margin-left: 15px;
 }
 
@@ -2338,10 +2361,12 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 .ident__inner-info {
+    display: none;
     font-size: 10px;
     line-height: 14px;
     font-weight: 400;
 }
+
 
 .reg__form {
     display: flex;
@@ -2390,9 +2415,8 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 .personal__phone {
-    /* max-width: 315px; */
     width: 100%;
-    /* margin-right: 15px; */
+    margin-right: 15px;
 }
 
 .reg__form-btns {
